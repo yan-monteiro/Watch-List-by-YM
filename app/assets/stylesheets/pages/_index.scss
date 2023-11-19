@@ -1,0 +1,27 @@
+// Import page-specific CSS files here.
+@import "home";
+
+body {
+  padding-top: 70px; /* Adiciona espaço superior para evitar sobreposição */
+}
+
+.banner banner-home {
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://img.freepik.com/free-vector/movie-film-strip-blue-background_1017-33458.jpg);
+  background-size: cover; /* Garante que a imagem de fundo cubra todo o espaço do banner */
+  background-position: center; /* Alinha a imagem de fundo ao centro */
+  height: 300px; /* Ajuste a altura do banner conforme desejado */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(0, 0, 0); /* Define a cor do texto para garantir visibilidade */
+}
+
+.banner .container {
+  position: relative;
+  z-index: 1;
+}
+
+.banner h1 {
+  margin-bottom: 20px; /* Ajusta o espaçamento inferior do título */
+}
