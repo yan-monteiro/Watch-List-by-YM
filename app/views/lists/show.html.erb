@@ -10,7 +10,7 @@
             <div>Static Image</div>
         <% end %>
     </div>
-
+<%# ------------------------------ %>
     <%= simple_form_for [@list, @bookmark], html: { class: "review-form" } do |f| %>
       <div class="form-inputs">
         <%= f.association :movie %>
@@ -18,7 +18,7 @@
         <%= f.submit "Add movie", class: "btn btn-success" %>
       </div>
     <% end -%>
-<%# ------------div------------------ %>
+<%# ------------------------------ %>
   <h1>Movies that you added</h1>
       <% @list.bookmarks.each do |bookmark| %>
         <div class="card">
